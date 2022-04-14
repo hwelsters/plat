@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMoveState : PlayerState
 {
     private const float MOVEMENT_SPEED      = 9f;
-    private const float FALL_MULTIPLIER     = 2f;
+    private const float FALL_MULTIPLIER     = 3f;
     private const float COLLISION_RADIUS    = 0.1f;
     private const float JUMP_BUFFER_TIME    = 0.2f;
     private const float COYOTE_TIME         = 0.2f;
