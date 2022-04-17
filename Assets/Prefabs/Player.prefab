@@ -181,3 +181,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf751ea54780444aa7a939b6d3c8be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerJumpFX: {fileID: 1376998506778599943, guid: 2f70dd6dcb117ae4aa84b3eaaa54b70d, type: 3}
+  playerMoveFX: {fileID: 3491440424864446127, guid: a8025c8681848c54f8be60d9bde39e7c, type: 3}

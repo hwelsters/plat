@@ -3,13 +3,19 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private const float JUMP_SPEED = 15f;
-    private const float JUMP_HOLD_TIME = 0.2f;
+    private const float JUMP_SPEED = 13f;
+    private const float JUMP_HOLD_TIME = 0.25f;
     private const float SQUASH_AMOUNT = 0.1f;
     
     private Animator animator;
     private Rigidbody2D rb2d;
     private PlayerState currentState;
+
+    [SerializeField] 
+    private GameObject playerJumpFX;
+    [SerializeField]
+    private GameObject playerMoveFX;
+
     private void Start()
     {
         this.animator = GetComponent<Animator>();
@@ -32,12 +38,19 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(Rigidbody2D rb2d)
     {
+        // REFACTOR
+        Instantiate(playerJumpFX, transform.position, Quaternion.identity);
         StartCoroutine(JumpCoroutine(rb2d));
     }
 
     public void Squash(SquashDirection squashDirection)
     {
         StartCoroutine(SquashCoroutine(squashDirection));
+    }
+
+    public void CreateDust()
+    {
+        Instantiate(playerMoveFX, transform.position, Quaternion.identity);
     }
 
     public Rigidbody2D GetRigidbody2D ()
@@ -76,4 +89,5 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
     }
+
 }

@@ -8,6 +8,7 @@ public class PlayerMoveState : PlayerState
     private const float COLLISION_RADIUS    = 0.1f;
     private const float JUMP_BUFFER_TIME    = 0.2f;
     private const float COYOTE_TIME         = 0.2f;
+    private const float DUST_CREATION_SPEED = -30;
 
     private float bufferTimeCounter = 0f;
     private float coyoteTimeCounter = 0f;
@@ -55,6 +56,16 @@ public class PlayerMoveState : PlayerState
 
         rb2d.velocity = new Vector2(this.xVelocity, rb2d.velocity.y);
         
+        if (isGrounded && !wasGrounded) 
+        {
+            player.Squash(SquashDirection.HORIZONTAL);
+
+            if (rb2d.velocity.y < DUST_CREATION_SPEED)
+            {
+                player.CreateDust();
+            }
+        }
+
         return this;
     }
 
@@ -72,7 +83,6 @@ public class PlayerMoveState : PlayerState
             animator.SetBool("moving", false);
         }
 
-        if (isGrounded && !wasGrounded) player.Squash(SquashDirection.HORIZONTAL);
     }
     
     private void ResetCounters() 
