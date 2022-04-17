@@ -11,10 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private PlayerState currentState;
 
-    [SerializeField] 
-    private GameObject playerJumpFX;
-    [SerializeField]
-    private GameObject playerMoveFX;
+    [SerializeField] private GameObject playerJumpFX;
+    [SerializeField] private GameObject playerMoveFX;
 
     private void Start()
     {
@@ -32,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // REFACTOR
         if (other.CompareTag("Trap")) this.currentState = new PlayerDeathState();
     }
 
@@ -71,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
         while ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.C)) && jumpHoldCounter >= 0)
         {
-            rb2d.velocity = new Vector2(rb2d.velocity.x, JUMP_SPEED);
+            this.rb2d.velocity = new Vector2(rb2d.velocity.x, JUMP_SPEED);
             jumpHoldCounter -= Time.deltaTime;
             yield return null;
         }

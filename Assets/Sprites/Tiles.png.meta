@@ -11941,27 +11941,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: plat_tiles_420
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 144
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a67e367628bb0a0800000000000000
-      internalID: -6864749826426836380
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: plat_tiles_421
       rect:
         serializedVersion: 2
@@ -11999,27 +11978,6 @@ TextureImporter:
       bones: []
       spriteID: 6d7c8a8917d938ca0800000000000000
       internalID: -6015791566018787370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plat_tiles_423
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 144
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbba8a19ca8a89770800000000000000
-      internalID: 8617823346105035708
       vertices: []
       indices: 
       edges: []
@@ -12535,9 +12493,9 @@ TextureImporter:
         x: 32
         y: 136
         width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12598,9 +12556,9 @@ TextureImporter:
         x: 56
         y: 136
         width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
