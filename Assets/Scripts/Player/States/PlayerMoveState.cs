@@ -8,7 +8,7 @@ public class PlayerMoveState : PlayerState
     private const float COLLISION_RADIUS    = 0.1f;
     private const float JUMP_BUFFER_TIME    = 0.2f;
     private const float COYOTE_TIME         = 0.2f;
-    private const float DUST_CREATION_SPEED = -30;
+    private const float DUST_CREATION_SPEED = -30f;
 
     private float bufferTimeCounter = 0f;
     private float coyoteTimeCounter = 0f;

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91366f1c8ac488543aab884122bc5bbe
+guid: 39e156811a4e4294d8ae2fdae4c285f1
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Endless Boss Battle
+  - 04b03
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
