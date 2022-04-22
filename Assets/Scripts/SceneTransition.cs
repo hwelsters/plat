@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static Vector2 nextScenePosition;
+
+    [SerializeField] private Vector2 currNextScenePosition;
+    [SerializeField] private string nextScene;
+
+    private void Start()
     {
-        
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = nextScenePosition;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ChangeScenes()
     {
-        
+        SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
     }
 }

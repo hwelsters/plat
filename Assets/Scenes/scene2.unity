@@ -185,6 +185,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f36f8dadd7f82a041a5c1b6198682177, type: 3}
+--- !u!1001 &358811578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1122136846235461922, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717273363333338112, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_Name
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -147.99779
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004594567086809882, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371879503711047033, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
+      propertyPath: nextScene
+      value: Scenes/scene3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cb21cc36ee22814e953fa71e96fabf3, type: 3}
 --- !u!4 &478301444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6899721619948025910, guid: b8febc54de9723e45b949df49c3932b8, type: 3}
@@ -17922,7 +17987,7 @@ Transform:
   - {fileID: 1666974888}
   - {fileID: 2094997735}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1634648936
 PrefabInstance:
@@ -18015,7 +18080,7 @@ Transform:
   - {fileID: 478301444}
   - {fileID: 619345531}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666974887
 GameObject:
@@ -18606,7 +18671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2430750066649687120, guid: 289f9b6a112cfcb40ae0364f2a4a3e45, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2430750066649687120, guid: 289f9b6a112cfcb40ae0364f2a4a3e45, type: 3}
       propertyPath: m_LocalPosition.z
