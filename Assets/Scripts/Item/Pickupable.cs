@@ -8,10 +8,10 @@ public abstract class Pickupable : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
-            HandleAction();
+            HandleAction(other);
             Destroy(gameObject);
         }
     }
 
-    protected abstract void HandleAction();
+    protected abstract void HandleAction(Collider2D other);
 }

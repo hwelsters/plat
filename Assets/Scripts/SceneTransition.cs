@@ -8,10 +8,9 @@ public class SceneTransition : MonoBehaviour
     [SerializeField] private Vector2 currNextScenePosition;
     [SerializeField] private string nextScene;
 
-    private void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        player.transform.position = nextScenePosition;
+        if(other.CompareTag("Player")) ChangeScenes();
     }
 
     private void ChangeScenes()
