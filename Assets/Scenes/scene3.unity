@@ -27563,6 +27563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275784223109586006, guid: c8e92a008798d2a4b8b262414e6a3128, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2366192804124235584, guid: c8e92a008798d2a4b8b262414e6a3128, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -27650,6 +27654,10 @@ PrefabInstance:
     - target: {fileID: 2366192804124235612, guid: c8e92a008798d2a4b8b262414e6a3128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466072460804294569, guid: c8e92a008798d2a4b8b262414e6a3128, type: 3}
+      propertyPath: m_Text
+      value: You found a GEM!
       objectReference: {fileID: 0}
     - target: {fileID: 4402065884802435232, guid: c8e92a008798d2a4b8b262414e6a3128, type: 3}
       propertyPath: m_IsActive
