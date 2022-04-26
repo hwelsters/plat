@@ -21,8 +21,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private GameObject playerMoveFX;
 
+    private static PlayerMovement instance = null;
+
     private void Start()
     {
+        if (instance == null) instance = this;
+        else if (instance != this) Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
+        
         this.animator = GetComponent<Animator>();
         this.rb2d = GetComponent<Rigidbody2D>();
 

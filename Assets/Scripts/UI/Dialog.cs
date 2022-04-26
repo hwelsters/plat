@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Dialog : MonoBehaviour
 {
-    public static void RunDialog()
+    private void Start()
     {
         
+    }
+
+    public static void RunDialog()
+    {
+
     }
 }

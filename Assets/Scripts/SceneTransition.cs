@@ -15,6 +15,8 @@ public class SceneTransition : MonoBehaviour
 
     private void ChangeScenes()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = currNextScenePosition;
         SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
     }
 }
