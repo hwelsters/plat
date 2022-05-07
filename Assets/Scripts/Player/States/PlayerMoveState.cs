@@ -14,6 +14,7 @@ public class PlayerMoveState : PlayerState
     private float coyoteTimeCounter = 0f;
 
     private float xVelocity = 0;
+    protected float direction = 1;
 
     private bool wasGrounded = false;
     private bool isGrounded = false;
@@ -28,7 +29,7 @@ public class PlayerMoveState : PlayerState
     public override PlayerState HandleInput(PlayerMovement player)
     {
         if (Input.GetKey(KeyCode.Q)) return new PlayerDeathState();
-        
+
         Rigidbody2D rb2d = player.GetRigidbody2D();
 
         this.wasGrounded = isGrounded;
@@ -66,15 +67,18 @@ public class PlayerMoveState : PlayerState
             }
         }
 
+        if (ItemManager.GetHasGun()) return new PlayerGunState();
         return this;
     }
 
     public override void HandleAnimation(PlayerMovement player)
     {
         Animator animator = player.GetAnimator();
+        animator.SetBool("gun", ItemManager.GetHasGun());
 
         if (Mathf.Abs(xVelocity) > float.Epsilon)
         {
+            direction = Mathf.Sign(xVelocity);
             animator.SetBool("moving", true);
             animator.SetFloat("xDirection", xVelocity * 100);
         }

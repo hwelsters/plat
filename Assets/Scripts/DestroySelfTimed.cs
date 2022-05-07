@@ -4,11 +4,11 @@ public class DestroySelfTimed : MonoBehaviour
 {
     [SerializeField] private float secondsToSelfDestruct;
 
-    private void Start() {
+    protected virtual void Start() {
         Invoke("DestroySelf", secondsToSelfDestruct);
     }
 
-    private void DestroySelf() {
+    protected virtual void DestroySelf() {
         Destroy(gameObject);
     }
 }

@@ -183,3 +183,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerJumpFX: {fileID: 6853952033575269457, guid: 2f70dd6dcb117ae4aa84b3eaaa54b70d, type: 3}
   playerMoveFX: {fileID: 7875744136435873139, guid: 835300b1b8294014d886039e8c014a8a, type: 3}
+  bullet: {fileID: 439895796656001902, guid: d87beaf2c13c8124bb2b6a09eb879d17, type: 3}

@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     private const float JUMP_HOLD_TIME = 0.25f;
     private const float SQUASH_AMOUNT = 0.1f;
     private const float FLASH_SPEED = 8f;
+    private const float BULLET_INITIAL_XOFFSET = 1.75f;
+    private const float BULLET_INITIAL_YOFFSET = 0.85f;
+
     private Animator animator;
 
     private Rigidbody2D rb2d;
@@ -20,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private GameObject playerMoveFX;
+    
+    [SerializeField] 
+    private GameObject bullet;
 
     private static PlayerMovement instance = null;
 
@@ -124,5 +130,12 @@ public class PlayerMovement : MonoBehaviour
     public void Flash()
     {
         StartCoroutine(FlashCoroutine());
+    }
+
+    public void ShootBullet(float direction)
+    {
+        GameObject bulletObject = Instantiate(bullet, (Vector2)transform.position + new Vector2(direction * BULLET_INITIAL_XOFFSET, BULLET_INITIAL_YOFFSET), Quaternion.identity);
+        Bullet bulletScript = bulletObject.GetComponent<Bullet>();
+        bulletScript.SetDirection(direction);
     }
 }
